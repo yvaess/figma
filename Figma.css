@@ -1,0 +1,442 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0px;
+    height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+    text-decoration: none;
+}
+.frame {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    align-items: center;
+    position: relative;
+}
+
+.frame .navigation {
+    display: flex;
+    flex-direction: column;
+    width: 1362px;
+    height: 95px;
+    align-items: flex-end;
+    gap: 8px;
+    padding: 0px 0px 0px var(--responsive-padding-xl);
+    position: relative;
+    margin-top: -1.00px;
+    background-color: var(--mapped-surface-default);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: var(--mapped-border-subtle);
+}
+
+.frame .div {
+    height: 24px;
+    justify-content: flex-end;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    background-color: var(--mapped-surface-subtle);
+}
+
+.frame .navigation-item {
+    display: flex;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: var(--responsive-gap-xs);
+    padding: var(--responsive-padding-xxs) var(--responsive-padding-xs)
+        var(--responsive-padding-xxs) var(--responsive-padding-xs);
+    position: relative;
+    border-radius: var(--mapped-border-radius-pill);
+}
+
+.frame .text-wrapper {
+    position: relative;
+    flex: 1;
+    font-family: var(--paragraphs-xsm-regular-font-family);
+    font-weight: var(--paragraphs-xsm-regular-font-weight);
+    color: var(--mapped-text-interactive);
+    font-size: var(--paragraphs-xsm-regular-font-size);
+    letter-spacing: var(--paragraphs-xsm-regular-letter-spacing);
+    line-height: var(--paragraphs-xsm-regular-line-height);
+    font-style: var(--paragraphs-xsm-regular-font-style);
+}
+
+.frame .navigation-item-wrapper {
+    display: flex;
+    width: 56px;
+    align-items: center;
+    justify-content: center;
+    gap: var(--responsive-gap-xs);
+    padding: var(--responsive-padding-xxs) var(--responsive-padding-xs)
+        var(--responsive-padding-xxs) var(--responsive-padding-xs);
+    position: relative;
+    border-radius: var(--mapped-border-radius-pill);
+}
+
+.frame .div-wrapper {
+    display: flex;
+    width: 63px;
+    align-items: center;
+    justify-content: center;
+    gap: var(--responsive-gap-xs);
+    padding: var(--responsive-padding-xxs) var(--responsive-padding-xs)
+        var(--responsive-padding-xxs) var(--responsive-padding-xs);
+    position: relative;
+    border-radius: var(--mapped-border-radius-pill);
+}
+
+.frame .navigation-item-2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--responsive-gap-xs);
+    padding: var(--responsive-padding-xxs) var(--responsive-padding-xs)
+        var(--responsive-padding-xxs) var(--responsive-padding-xs);
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: var(--mapped-border-radius-pill);
+}
+
+.frame .navigation-item-3 {
+    position: relative;
+    width: fit-content;
+    font-family: var(--paragraphs-xsm-regular-font-family);
+    font-weight: var(--paragraphs-xsm-regular-font-weight);
+    color: var(--mapped-text-interactive);
+    font-size: var(--paragraphs-xsm-regular-font-size);
+    letter-spacing: var(--paragraphs-xsm-regular-letter-spacing);
+    line-height: var(--paragraphs-xsm-regular-line-height);
+    white-space: nowrap;
+    font-style: var(--paragraphs-xsm-regular-font-style);
+}
+
+.frame .div-2 {
+    width: 1247px;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.frame .div-3 {
+    min-width: 480px;
+    max-width: 600px;
+    justify-content: space-between;
+    padding: 0px var(--responsive-padding-lg) 0px var(--responsive-padding-lg);
+    flex: 1;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.frame .navigation-item-4 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--responsive-gap-xs);
+    padding: var(--responsive-padding-xs) var(--responsive-padding-sm)
+        var(--responsive-padding-xs) var(--responsive-padding-sm);
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: var(--mapped-border-radius-pill);
+}
+
+.frame .navigation-item-5 {
+    position: relative;
+    width: fit-content;
+    font-family: var(--paragraphs-lg-regular-font-family);
+    font-weight: var(--paragraphs-lg-regular-font-weight);
+    color: var(--mapped-text-interactive);
+    font-size: var(--paragraphs-lg-regular-font-size);
+    letter-spacing: var(--paragraphs-lg-regular-letter-spacing);
+    line-height: var(--paragraphs-lg-regular-line-height);
+    white-space: nowrap;
+    font-style: var(--paragraphs-lg-regular-font-style);
+}
+
+.frame .fi-rr-angle-small {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    aspect-ratio: 1;
+}
+
+.frame .div-4 {
+    justify-content: flex-end;
+    gap: 16px;
+    flex: 1;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.frame .field {
+    display: flex;
+    max-width: 456px;
+    align-items: center;
+    gap: var(--responsive-gap-xs);
+    padding: var(--responsive-padding-xs) var(--responsive-padding-sm)
+        var(--responsive-padding-xs) var(--responsive-padding-sm);
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    margin-top: -1.00px;
+    margin-bottom: -1.00px;
+    background-color: var(--mapped-surface-default);
+    border-radius: var(--mapped-border-radius-pill);
+    border: 1px solid;
+    border-color: var(--mapped-border-default);
+}
+
+.frame .fi-rr-search {
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+
+.frame .placeholder {
+    position: relative;
+    flex: 1;
+    margin-top: -0.50px;
+    font-family: var(--paragraphs-md-regular-font-family);
+    font-weight: var(--paragraphs-md-regular-font-weight);
+    color: var(--mapped-text-subtle);
+    font-size: var(--paragraphs-md-regular-font-size);
+    letter-spacing: var(--paragraphs-md-regular-letter-spacing);
+    line-height: var(--paragraphs-md-regular-line-height);
+    font-style: var(--paragraphs-md-regular-font-style);
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.frame .icon-buttons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--responsive-gap-sm);
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.frame .button {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+    position: relative;
+}
+
+.frame .img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.frame .language {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--responsive-gap-xxs);
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.frame .div-5 {
+    justify-content: center;
+    gap: 30px;
+    flex: 0 0 auto;
+    background-color: var(--mapped-surface-subtle);
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+}
+
+.frame .free-summer-tote-bag {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Helvetica Neue LT W1G 57 Cn-57Condensed", Helvetica;
+    font-weight: 400;
+    color: var(--collection-1-secondary-grey);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 19.6px;
+    white-space: nowrap;
+}
+
+.frame .free-summer-tote-bag-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: var(--body-small-font-family);
+    font-weight: var(--body-small-font-weight);
+    color: var(--collection-1-secondary-grey);
+    font-size: var(--body-small-font-size);
+    text-align: center;
+    letter-spacing: var(--body-small-letter-spacing);
+    line-height: var(--body-small-line-height);
+    white-space: nowrap;
+    font-style: var(--body-small-font-style);
+}
+
+.frame .LOGO {
+    position: absolute;
+    top: 1px;
+    left: 40px;
+    width: 113px;
+    height: 112px;
+}
+:root {
+    --paragraphs-xsm-regular-font-family: "Inter Tight", Helvetica;
+    --paragraphs-xsm-regular-font-weight: 400;
+    --paragraphs-xsm-regular-font-size: 12px;
+    --paragraphs-xsm-regular-letter-spacing: 0px;
+    --paragraphs-xsm-regular-line-height: 16px;
+    --paragraphs-xsm-regular-font-style: normal;
+    --paragraphs-lg-regular-font-family: "Inter Tight", Helvetica;
+    --paragraphs-lg-regular-font-weight: 400;
+    --paragraphs-lg-regular-font-size: 18px;
+    --paragraphs-lg-regular-letter-spacing: 0px;
+    --paragraphs-lg-regular-line-height: 24px;
+    --paragraphs-lg-regular-font-style: normal;
+    --paragraphs-md-regular-font-family: "Inter Tight", Helvetica;
+    --paragraphs-md-regular-font-weight: 400;
+    --paragraphs-md-regular-font-size: 16px;
+    --paragraphs-md-regular-letter-spacing: 0px;
+    --paragraphs-md-regular-line-height: 24px;
+    --paragraphs-md-regular-font-style: normal;
+    --body-small-font-family: "Helvetica Neue LT W1G 57 Cn", Helvetica;
+    --body-small-font-weight: 400;
+    --body-small-font-size: 14px;
+    --body-small-letter-spacing: 0px;
+    --body-small-line-height: 139.9999976158142%;
+    --body-small-font-style: normal;
+    --variable-collection-open: none;
+    --variable-collection-invisible: 0px;
+    --variable-collection-visible: 100px;
+    --mapped-text-interactive: var(--alias-neutral-900);
+    --mapped-text-subtle: var(--alias-neutral-600);
+    --mapped-surface-subtle: var(--alias-neutral-200);
+    --mapped-border-radius-pill: var(--brand-scale-1200);
+    --mapped-surface-default: var(--brand-foundation-white);
+    --mapped-border-default: var(--alias-neutral-400);
+    --mapped-border-subtle: var(--alias-neutral-200);
+    --mapped-text-interactive-hover: var(--alias-neutral-700);
+    --mapped-text-default: var(--alias-neutral-900);
+    --mapped-border-focus: var(--alias-neutral-500);
+    --mapped-surface-raised: var(--alias-neutral-100);
+    --collection-1-secondary-grey: rgba(115, 115, 115, 1);
+    --alias-neutral-900: var(--brand-grey-900);
+    --alias-neutral-600: var(--brand-grey-600);
+    --alias-space-xs: var(--brand-scale-200);
+    --alias-neutral-100: var(--brand-grey-100);
+    --alias-space-xxs: var(--brand-scale-100);
+    --alias-space-sm: var(--brand-scale-400);
+    --alias-neutral-200: var(--brand-grey-200);
+    --alias-neutral-400: var(--brand-grey-400);
+    --alias-neutral-800: var(--brand-grey-800);
+    --alias-space-lg: var(--brand-scale-600);
+    --alias-space-md: var(--brand-scale-500);
+    --alias-space-xl: var(--brand-scale-700);
+    --alias-neutral-700: var(--brand-grey-700);
+    --alias-neutral-300: var(--brand-grey-300);
+    --alias-neutral-500: var(--brand-grey-500);
+    --responsive-gap-xs: var(--alias-space-xs);
+    --responsive-padding-xs: var(--alias-space-xs);
+    --responsive-padding-xxs: var(--alias-space-xxs);
+    --responsive-padding-sm: var(--alias-space-sm);
+    --responsive-gap-xxs: var(--alias-space-xxs);
+    --responsive-gap-sm: var(--alias-space-sm);
+    --responsive-padding-lg: var(--alias-space-lg);
+    --responsive-padding-xl: var(--alias-space-xl);
+    --brand-grey-900: rgba(17, 17, 17, 1);
+    --brand-grey-600: rgba(122, 122, 122, 1);
+    --brand-scale-200: 8px;
+    --brand-grey-100: rgba(250, 250, 250, 1);
+    --brand-scale-100: 4px;
+    --brand-scale-400: 16px;
+    --brand-grey-200: rgba(237, 237, 237, 1);
+    --brand-grey-400: rgba(189, 189, 189, 1);
+    --brand-scale-1200: 128px;
+    --brand-grey-800: rgba(46, 46, 46, 1);
+    --brand-foundation-white: rgba(255, 255, 255, 1);
+    --brand-scale-600: 32px;
+    --brand-scale-500: 24px;
+    --brand-scale-700: 40px;
+    --brand-grey-700: rgba(85, 85, 85, 1);
+    --brand-grey-300: rgba(220, 220, 220, 1);
+    --brand-grey-500: rgba(158, 158, 158, 1);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-mapped-mode="light">
+        <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-mapped-mode="light"] {
+    --mapped-text-interactive: var(--alias-neutral-900);
+    --mapped-text-subtle: var(--alias-neutral-600);
+    --mapped-surface-subtle: var(--alias-neutral-200);
+    --mapped-surface-default: var(--brand-foundation-white);
+    --mapped-border-default: var(--alias-neutral-400);
+    --mapped-border-subtle: var(--alias-neutral-200);
+    --mapped-text-interactive-hover: var(--alias-neutral-700);
+    --mapped-text-default: var(--alias-neutral-900);
+    --mapped-surface-raised: var(--alias-neutral-100);
+}
+
+[data-mapped-mode="dark"] {
+    --mapped-text-interactive: var(--alias-neutral-100);
+    --mapped-text-subtle: var(--alias-neutral-400);
+    --mapped-surface-subtle: var(--alias-neutral-800);
+    --mapped-surface-default: var(--alias-neutral-900);
+    --mapped-border-default: var(--alias-neutral-600);
+    --mapped-border-subtle: var(--alias-neutral-800);
+    --mapped-text-interactive-hover: var(--alias-neutral-300);
+    --mapped-text-default: var(--alias-neutral-100);
+    --mapped-surface-raised: var(--alias-neutral-800);
+}
+
+[data-responsive-mode="desktop"] {
+    --responsive-padding-xs: var(--alias-space-xs);
+    --responsive-padding-sm: var(--alias-space-sm);
+    --responsive-padding-lg: var(--alias-space-lg);
+    --responsive-padding-xl: var(--alias-space-xl);
+}
+
+[data-responsive-mode="mobile"] {
+    --responsive-padding-xs: var(--alias-space-xxs);
+    --responsive-padding-sm: var(--alias-space-xs);
+    --responsive-padding-lg: var(--alias-space-md);
+    --responsive-padding-xl: var(--alias-space-lg);
+}
